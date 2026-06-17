@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Assistant</title>
+    <title>Otthoni Vezérlőpult</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 40px; /* Távolság a két gomb között */
             height: 100vh;
             margin: 0;
-            background-color: #03a9f4; /* Világos kék háttér */
+            background-color: #1e1e24; /* Elegáns sötét háttér */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .container {
@@ -42,7 +43,7 @@
         }
         .text-label {
             color: white;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: bold;
             margin-top: 20px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
@@ -52,17 +53,24 @@
 </head>
 <body>
 
-    <!-- JAVÍTOTT LINK: Most már a pontos Home Assistant címedre mutat -->
-    <a class="container" href="http://poros.freeddns.org:8123">
-        
+    <!-- HOME ASSISTANT IKON -->
+    <a class="container" href="https://ha.porosferenc.hu" target="_blank">
         <div class="card">
             <svg viewBox="0 0 24 24">
                 <path fill="#03a9f4" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6L6,11V18H10V14H14V18H18V11L12,6M12,8.25L16,11.57V16H14V12H10V16H8V11.57L12,8.25Z" />
             </svg>
         </div>
-        
-        <div class="text-label">Home Assistant belépés</div>
-        
+        <div class="text-label">Home Assistant</div>
+    </a>
+
+    <!-- FRITZBOX KAMERÁK FTP IKON -->
+    <a class="container" href="ftp://ftp.porosferenc.hu:21" target="_blank">
+        <div class="card">
+            <svg viewBox="0 0 24 24">
+                <path fill="#4caf50" d="M19,20H5V4H7V7H17V4H19M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M14,18H10V14H7L12,9L17,14H14V18Z" />
+            </svg>
+        </div>
+        <div class="text-label">Kamerák FTP</div>
     </a>
 
 </body>
